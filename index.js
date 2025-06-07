@@ -1,8 +1,5 @@
 const API_KEY = "babf0f4e684e15176c2fc62d0a394fac";
 const userLocation = document.getElementById("userLocation");
-//const converter = document.getElementById("converter");
-//const Forecast = document.querySelector(".Forecast");
-
 WEATHER_DATA_ENDPOINT = 'https://api.openweathermap.org/data/2.5/weather?appid=';
 FORECAST_DATA_ENDPOINT = 'https://api.openweathermap.org/data/2.5/forecast?appid=';
 function findUserLocation() {
