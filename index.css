@@ -57,7 +57,7 @@ body {
 .input-group .converter {
     position: absolute;
     right: 45px;
-    /*right: 45px sets the right edge of an element 45 pixels to the right of its normal position,*/
+    /* right: 45px sets the right edge of an element 45 pixels to the right of its normal position, */
     border: none;
     outline: none;
     font-size: 18px;
@@ -100,9 +100,9 @@ body {
 
 .highlights {
     display: grid;
-    /*to show in rows and columns*/
+    /* to show in rows and columns */
     grid-template-columns: repeat(3, 350px);
-    /*3 columns of size 350px*/
+    /* 3 columns of size 350px */
     grid-auto-flow: row;
     row-gap: 1rem;
     column-gap: 10px;
@@ -189,6 +189,7 @@ body {
 }
 
 /* For mobile phones (width <= 768px) */
+
 @media (max-width: 768px) {
     .temperature {
         font-size: 3.5rem;
@@ -230,4 +231,4 @@ body {
     .weatherIcon {
         height: 100px;
     }
-}
+} 
