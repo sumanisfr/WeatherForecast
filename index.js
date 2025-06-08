@@ -105,13 +105,20 @@ function findUserLocation() {
 
         });
 }
-function getLongFormatDateTime(unixTimestamp, timezoneOffset, options) {
-    const localTime = new Date((unixTimestamp + timezoneOffset) * 1000);
-    return localTime.toLocaleString("en-US", options);
+// function getLongFormatDateTime(unixTimestamp, timezoneOffset, options) {
+//     const localTime = new Date((unixTimestamp + timezoneOffset) * 1000);
+//     return localTime.toLocaleString("en-US", options);
+// }
+
+
+
+function formatUnixTime(dtValue,offSet,options={}){
+    const date = new Date((dtValue + offSet) * 1000);
+    return date.toLocaleString([],{timeZone:"UTC",...options});
 }
-
-
-
+function getLongFormatDateTime(dtValue, offSet, options) {
+    return formatUnixTime(dtValue,offSet,options)   
+}
 
 
 
