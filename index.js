@@ -103,8 +103,7 @@ function findUserLocation() {
                     });
                 });
 
-        }
-        );
+        });
 }
 function getLongFormatDateTime(unixTimestamp, timezoneOffset, options) {
     const localTime = new Date((unixTimestamp + timezoneOffset) * 1000);
