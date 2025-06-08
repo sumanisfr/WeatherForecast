@@ -141,25 +141,11 @@ function getLongFormatDateTime(unixTimestamp, timezoneOffset, options) {
 
 
 
-// function formatUnixTime(dtValue, offSet, options = {}) {
-//     const date = new Date((dtValue + offSet) * 1000);
-//     return date.toLocaleTimeString([], { timeZone: "UTC", ...options });
-// }
-
-// function getLongFormatDateTime(dtValue, offSet, options) {
-//     return formatUnixTime(dtValue, offSet, options)
-// }
-// /*function findUserLocation():
-// This defines a function named findUserLocation. When called, it runs the code inside its curly braces { ... }.
-
 // fetch(WEATHER_API_ENDPOINT + "London"):
 // This line sends a network request to a URL, which is a combination of WEATHER_API_ENDPOINT and the string "London".
 
 // For example, if WEATHER_API_ENDPOINT was "https://api.weather.com/data?city=", the full request would be:
 
-// arduino
-// Copy
-// Edit
 // https://api.weather.com/data?city=London
 // .then((response) => response.json()):
 // After the fetch completes, this line takes the raw response object and converts it into JSON format.
